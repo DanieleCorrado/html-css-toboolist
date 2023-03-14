@@ -1,5 +1,150 @@
+/* Regole di stile generali */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+/* regole di stile del body */
+
+body {
+  background-color: #ccc;
+}
+
+/* Regole di stile dell'header */
+
+header {
+  padding: 10px 20px;
+  background-color: #fff;
+}
+
+#logo {
+  vertical-align:middle
+}
+
+#title {
+  display: inline-block;
+  font-size: 30px;
+  line-height: 53px;
+}
+
+/* Regole di stile dal main */
+
+main {
+  margin: 40px auto;
+  width: 80%;
+  background-color: #fff;
+  border-radius: 2%;
+}
+
+/* Regole di stile sezione aggiungi attività */
+
+#new-element {
+  border-bottom: 1px solid black;
+  padding: 10px 20px;
+}
+
+button {
+  padding: 5px;
+  font-size: 20px;
+}
+
+#add-task {
+  background-color: #008CBA;
+  border-radius: 10%;
+  border: 1px solid #008CBA;
+}
+
+#add-section {
+  background-color: #e7e7e7;
+  border-radius: 10%;
+  border: 1px solid #e7e7e7;
+}
+
+/* Regole di stile lista attività */
+
+.activity {
+  padding-bottom: 20px;
+}
+
+.activity-name {
+  margin-top: 30px;
+  margin-left: 30px;
+  color: grey;
+}
+
+.activity-name::before {
+  content: '\02C5';
+}
+
+.task {
+  margin-left: 30px;
+  padding-top: 10px;
+}
+
+/* Regole di stile stato attività */
+
+.task-finished::before{
+  display: inline-block;
+  font-size: 10px;
+  margin-bottom: 15px;
+  text-align: center;
+  border: 1px solid green;
+  border-radius: 40%;
+  content: '\2713';
+}
+
+.task-unfinished::before{
+  display: inline-block;
+  font-size: 10px;
+  margin-bottom: 15px;
+  text-align: center;
+  border: 1px solid red;
+  border-radius: 40%;
+  content: '\2717';
+}
+
+/* Regole di stile etichetta attività */
+
+.editorial::after{
+  border-radius: 40%;
+  padding: 5px;
+  content: 'Editorial';
+  background-color: #008CBA;
+}
+
+.goal::after{
+  border-radius: 40%;
+  padding: 5px;
+  content: 'Q1 goal';
+  background-color: purple;
+}
+
+.recruiting::after{
+  border-radius: 40%;
+  padding: 5px;
+  content: 'Recruiting';
+  background-color: green;
+}
+
+.mobile::after{
+  border-radius: 40%;
+  padding: 5px;
+  content: 'Mobile';
+  background-color: orange;
+}
+
+.website::after{
+  border-radius: 40%;
+  padding: 5px;
+  content: 'Website';
+  background-color: pink;
+}
+
+.sales::after{
+  border-radius: 40%;
+  padding: 5px;
+  content: 'Sales';
+  background-color: lime;
 }
