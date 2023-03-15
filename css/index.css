@@ -20,12 +20,15 @@ header {
 }
 
 #logo {
-  vertical-align:middle
+  height: 53px;
+  vertical-align:middle;
+  line-height: 53px;
 }
 
 #title {
   display: inline-block;
   font-size: 30px;
+  vertical-align:middle;
   line-height: 53px;
 }
 
@@ -78,27 +81,24 @@ button {
   content: '\02C5';
 }
 
-.task {
+.tasks {
   margin-left: 30px;
   padding-top: 10px;
+  margin-bottom: 5px;
 }
 
 /* Regole di stile stato attività */
 
-.task-finished::before{
-  display: inline-block;
+.finished::before{
   font-size: 10px;
-  margin-bottom: 15px;
   text-align: center;
   border: 1px solid green;
-  border-radius: 40%;
+  border-radius: 50%;
   content: '\2713';
 }
 
-.task-unfinished::before{
-  display: inline-block;
+.unfinished::before{
   font-size: 10px;
-  margin-bottom: 15px;
   text-align: center;
   border: 1px solid red;
   border-radius: 40%;
@@ -107,44 +107,35 @@ button {
 
 /* Regole di stile etichetta attività */
 
-.editorial::after{
-  border-radius: 40%;
+.label {
+  display: inline-block;
+  border-radius: 25%;
   padding: 5px;
-  content: 'Editorial';
+  margin-bottom: 5px;
+  width: auto;
+  height: auto;
+}
+
+.editorial{
   background-color: #008CBA;
 }
 
-.goal::after{
-  border-radius: 40%;
-  padding: 5px;
-  content: 'Q1 goal';
+.goal{
   background-color: purple;
 }
 
-.recruiting::after{
-  border-radius: 40%;
-  padding: 5px;
-  content: 'Recruiting';
+.recruiting{
   background-color: green;
 }
 
-.mobile::after{
-  border-radius: 40%;
-  padding: 5px;
-  content: 'Mobile';
+.mobile{
   background-color: orange;
 }
 
-.website::after{
-  border-radius: 40%;
-  padding: 5px;
-  content: 'Website';
+.website{
   background-color: pink;
 }
 
-.sales::after{
-  border-radius: 40%;
-  padding: 5px;
-  content: 'Sales';
+.sales{
   background-color: lime;
 }
